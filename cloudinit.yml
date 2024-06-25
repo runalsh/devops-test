@@ -1,0 +1,8 @@
+#cloud-config
+
+packages:
+  - nginx
+
+# runcmd:
+#   - echo $welcome_msg > /var/www/html/index.html
+#   - chown www-data /var/www/html/index.html
