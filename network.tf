@@ -12,7 +12,7 @@ resource "yandex_vpc_subnet" "internal" {
 }
 
 resource "yandex_vpc_subnet" "external" {
-  name           = "external"
+  name           = var.external_subnet
   v4_cidr_blocks = var.cidr-ext
   network_id     = yandex_vpc_network.vpc.id
   labels = local.common_labels
